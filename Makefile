@@ -49,7 +49,7 @@ all: $(TARGET)
 
 
 $(TARGET): $(OBJECTS)
-	$(CXX) $(LNFLAGS) $(OBJECTS) -o $(TARGET)
+	$(CXX) $(OBJECTS) $(LNFLAGS) -o $(TARGET)
 
 clean:
 	rm -f $(OBJECTS) core* *core $(TARGET) *~
